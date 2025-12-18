@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Tik Tak Top Course</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- CSS Custom -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">Tik Tak Top</a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+              >
+                Layanan
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="#pendaftaran">Pendaftaran</a>
+                </li>
+                <li><a class="dropdown-item" href="#kelas">Kelas</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item"><a class="nav-link" href="#">Koleksi</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- JUMBOTRON -->
+    <section class="jumbotron text-center">
+      <div class="container">
+        <h1 class="display-5">Selamat Datang di Tik Tak Top Course</h1>
+        <p class="lead">Lembaga Kursus Komputer Terpercaya</p>
+      </div>
+    </section>
+
+    <!-- FORM PENDAFTARAN -->
+    <section class="container my-5" id="pendaftaran">
+      <h2 class="text-center mb-4">Pendaftaran Anggota</h2>
+
+      <!-- 🔴 GANTI URL DI BAWAH INI -->
+      <form
+        action="https://script.google.com/macros/s/AKfycbzA_uHuUq0-NnDEKHAqqT_npujVFCOjvQTq-PFKBzCh3HcHGcYw5gnOvAgbCW0J5juo/exec"
+        method="post"
+      >
+        <div class="mb-3">
+          <label class="form-label">Nama Lengkap</label>
+          <input type="text" name="nama" class="form-control" required />
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label">Program Kursus</label>
+          <select name="program" class="form-select" required>
+            <option value="">-- Pilih Program --</option>
+            <option value="Desain Grafis">Desain Grafis</option>
+            <option value="Web Programming">Web Programming</option>
+            <option value="Data Analysis">Data Analysis</option>
+          </select>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label">NIK / Nomor Induk Siswa</label>
+          <input type="text" name="nik" class="form-control" required />
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label">Alamat</label>
+          <textarea
+            name="alamat"
+            class="form-control"
+            rows="3"
+            required
+          ></textarea>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label">Nomor WhatsApp</label>
+          <input type="text" name="whatsapp" class="form-control" required />
+        </div>
+
+        <button type="submit" class="btn btn-primary">Daftar</button>
+      </form>
+    </section>
+
+    <!-- DAFTAR KELAS -->
+    <section class="bg-light py-5" id="kelas">
+      <div class="container">
+        <h2 class="text-center mb-4">Daftar Kelas Tik Tak Top</h2>
+
+        <div class="row text-center">
+          <div class="col-md-4">
+            <div class="card p-3">
+              <h5>Kelas Dasar Web</h5>
+              <p>HTML, CSS, dan dasar website</p>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card p-3">
+              <h5>Kelas Python Pemula</h5>
+              <p>Dasar pemrograman Python</p>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card p-3">
+              <h5>Kelas Excel untuk Data</h5>
+              <p>Olah data dan analisis Excel</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="text-white text-center p-4">
+      <p>📍 Alamat: Jl. Teknologi No. 10</p>
+      <p>📞 Kontak: 0812-3456-7890</p>
+      <p>🌐 Sosial Media: @tiktaktopcourse</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
